@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-22T05:57:35.448Z",
+    "end": "2024-10-22T05:57:57.998Z",
+    "duration": 22550,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e3332931-420d-4783-9be3-7feb10503ee0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\job.cy.js",
+      "file": "cypress\\e2e\\job.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7db24ead-567e-430c-aeae-ed9dbd81b073",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 22446,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\job.cy.js\"\n}",
+              "code": "cy.on('uncaught:exception', (err, runnable) => {\n  expect(err.message).to.include('of undefined');\n  done();\n  return false;\n});\ncy.visit(\"/web/index.php/auth/login\");\ncy.get(\"input[name='username']\").type(\"Admin\");\ncy.get(\"input[type='password']\").type(\"admin123\");\ncy.get(\"button[type='submit']\").click();\n//cy.get(\"a.oxd-main-menu-item.active\")\ncy.contains(\"Admin\").click();\ncy.contains(\"Job\").eq(0).click();\ncy.contains(\"Job Titles\").first().click();\ncy.get(\"i[class='oxd-icon bi-plus oxd-button-icon']\").click();\nlet r = (Math.random() + 1).toString(36).substring(7);\ncy.get(\"input[class='oxd-input oxd-input--active']\").eq(1).type(\"Automation QA\" + r);\ncy.get(\"textarea[class='oxd-textarea oxd-textarea--active oxd-textarea--resize-vertical']\").eq(0).type(\"write Automation scripts\");\ncy.get(\"button[type='submit']\").click();\ncy.contains(\"Successfully\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "0ad58a45-4008-4d78-a5d8-18560d88045d",
+              "parentUUID": "7db24ead-567e-430c-aeae-ed9dbd81b073",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0ad58a45-4008-4d78-a5d8-18560d88045d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22446,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

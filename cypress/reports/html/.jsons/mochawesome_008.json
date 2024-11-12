@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-22T05:48:45.921Z",
+    "end": "2024-10-22T05:49:08.961Z",
+    "duration": 23040,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "50765ddf-9d25-47b4-a991-cbf7e0e137ae",
+      "title": "",
+      "fullFile": "cypress\\e2e\\addemplye.cy.js",
+      "file": "cypress\\e2e\\addemplye.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6af31839-2c7a-40b7-aa53-bd25f14f3cef",
+          "title": "verify add employee functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "verify add employee functionality passes",
+              "timedOut": null,
+              "duration": 11295,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\addemplye.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\addemplye.cy.js\\\\verify add employee functionality -- passes (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(\"input[name='username']\").type(_login.default.username);\ncy.get(\"input[type='password']\").type(_login.default.password);\ncy.get(\"button[type='submit']\").click();\ncy.get(\"a.oxd-main-menu-item.active\");\ncy.get('a[href=\"/web/index.php/pim/viewPimModule\"]').click();\ncy.contains('Add Employee').click();\ncy.get(\"input[name='firstName']\").type(_addjobtitle.default.jobtitle);\ncy.get(\"input[name='lastName']\").type(_addjobtitle.default.jobdescription);\ncy.get(\"button[type='submit']\").click();\ncy.get(\"div.oxd-layout-context\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `a.oxd-main-menu-item.active`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `a.oxd-main-menu-item.active`, but never found it.\n    at Context.eval (webpack://dsm-cypress/./cypress/e2e/addemplye.cy.js:10:11)",
+                "diff": null
+              },
+              "uuid": "b6c169ea-c352-45e2-abbb-f97f0aca7b92",
+              "parentUUID": "6af31839-2c7a-40b7-aa53-bd25f14f3cef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "passes",
+              "fullTitle": "verify add employee functionality passes",
+              "timedOut": null,
+              "duration": 11531,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\addemplye.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(\"input[name='username']\").type(\"Admin\");\ncy.get(\"input[type='password']\").type(\"admin123\");\ncy.get(\"button[type='submit']\").click();\ncy.get(\"a.oxd-main-menu-item.active\");\ncy.get('a[href=\"/web/index.php/pim/viewPimModule\"]').click();\ncy.contains('Add Employee').click();\ncy.get(\"button[type='submit']\").click();\ncy.contains(\"Required\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "88b65f7d-5592-4c8a-af5f-fdb1bc16ee12",
+              "parentUUID": "6af31839-2c7a-40b7-aa53-bd25f14f3cef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "88b65f7d-5592-4c8a-af5f-fdb1bc16ee12"
+          ],
+          "failures": [
+            "b6c169ea-c352-45e2-abbb-f97f0aca7b92"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22826,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

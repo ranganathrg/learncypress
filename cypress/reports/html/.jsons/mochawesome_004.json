@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-22T05:39:06.487Z",
+    "end": "2024-10-22T05:39:23.935Z",
+    "duration": 17448,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c8c621cf-479d-47e5-b222-9c094e680598",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login23.cy.js",
+      "file": "cypress\\e2e\\login23.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "92d59c62-8970-4028-8909-d6bc1dd93450",
+          "title": "template spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "template spec passes",
+              "timedOut": null,
+              "duration": 9397,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\login23.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(\"input[name='username']\").type(\"Admin\");\ncy.get(\"input[type='password']\").type(\"admin123\");\ncy.get(\"button[type='submit']\").click();\ncy.get(\"a.oxd-main-menu-item.active\");",
+              "err": {},
+              "uuid": "bf33d75c-7fde-4678-be18-ae8c60ccb7eb",
+              "parentUUID": "92d59c62-8970-4028-8909-d6bc1dd93450",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify login with valid user name and invalid password credentials",
+              "fullTitle": "template spec Verify login with valid user name and invalid password credentials",
+              "timedOut": null,
+              "duration": 4209,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\login23.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(\"input[name='username']\").type(\"Admin\");\ncy.get(\"input[type='password']\").type(\"fdfdcf\");\ncy.get(\"button[type='submit']\").click();\ncy.get(\"p.oxd-text.oxd-text--p.oxd-alert-content-text\");",
+              "err": {},
+              "uuid": "11504828-9a33-4e5b-88ec-859c59363cbd",
+              "parentUUID": "92d59c62-8970-4028-8909-d6bc1dd93450",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify login with invalid user name and invalid password credentials",
+              "fullTitle": "template spec Verify login with invalid user name and invalid password credentials",
+              "timedOut": null,
+              "duration": 3625,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\login23.cy.js\"\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.get(\"input[name='username']\").type(\"Adjhgn\");\ncy.get(\"input[type='password']\").type(\"fdfdcf\");\ncy.get(\"button[type='submit']\").click();\ncy.get(\"p.oxd-text.oxd-text--p.oxd-alert-content-text\");",
+              "err": {},
+              "uuid": "4d0df359-a9fa-4ff7-9ae1-504b57331c2d",
+              "parentUUID": "92d59c62-8970-4028-8909-d6bc1dd93450",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bf33d75c-7fde-4678-be18-ae8c60ccb7eb",
+            "11504828-9a33-4e5b-88ec-859c59363cbd",
+            "4d0df359-a9fa-4ff7-9ae1-504b57331c2d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17231,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
